@@ -44,7 +44,7 @@ public class Task4 {
         try {
             double exchangeRate = getExchangeRate(initialCurrency, finalCurrency);
             double amountConverted = currencyConvert(amount, exchangeRate);
-            System.out.printf("converted amount: %.2f %s/n", amountConverted, finalCurrency);
+            System.out.printf("converted amount: %.2f %s", amountConverted, finalCurrency);
         } catch (IOException e) {
             System.out.println("error: " + e.getMessage());
         } finally {
